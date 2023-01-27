@@ -131,6 +131,7 @@ Under this design, comparing the observed average outcomes under each treatment 
 - Emulate the target trial with observational data as close as possible
 
 ---
+class: center, middle
 
 ![](figs/tt.png)
 
@@ -160,7 +161,7 @@ _Neurology. 2020_
 
 ---
 
-<img src=./figs/prevalent_user.PNG width="500" height="450" />
+<img src=./figs/prevalent_user.png width="500" height="450" />
 
 .footnote[Edouard L. Fu et al. Clinical Kidney Journal. 2020]
 ???
@@ -381,7 +382,7 @@ Parametric G-formula: Allows presence of time-varying confounding feedback
 
 --
 
-.pull-right[<img src=./figs/dag2.png width="400" height="200" />]
+.pull-right[<img src=./figs/dag2.PNG width="400" height="200" />]
 
 --
 
