@@ -56,6 +56,8 @@ class: center, middle
 
 L. Paloma Rojas-Saunero MD, PhD
 <br>
+Postdoctoral scholar
+<br>
 **Dr. Mayeda's group, Department of Epidemiology**
 
 ]
@@ -139,11 +141,10 @@ class: center, middle
 
 class: middle, center
 
-![](https://media.giphy.com/media/pgcz9Arntj2Zq/giphy.gif)]
+![](https://media.giphy.com/media/pgcz9Arntj2Zq/giphy.gif)
 
 ???
-Now, you may feel skeptical about this framework if you are not working specifically in pharmacoepi. When I first started my PhD I felt very uncomfortable because I tought no exposure would satisfy the well defined intervention assumption that is usually described in this setting.
-
+Now, you may feel skeptical about this framework if you are not working specifically in pharmacoepi. Most of the modifiable risk factors are not easy to conceptualize as treatment arms in a trial. 
 I hope my work here helps moving out from that dilemma and using the core concepts of this framework to improve the way ask questions and seek responses with observational studies.
 
 But first, lets start with a case where we are actually interested in repurposing a drug for dementia prevention. 
@@ -160,10 +161,15 @@ Ellen C. Caniglia, L. Paloma Rojas-Saunero,  Saima Hilal, Silvan Licher, Roger L
 _Neurology. 2020_
 
 ---
+class: center, middle
 
 <img src=./figs/prevalent_user.png width="500" height="450" />
 
+.left[
+
 .footnote[Edouard L. Fu et al. Clinical Kidney Journal. 2020]
+]
+
 ???
 
 Frequently, observational studies that don't conceptualize the target trial self inflict with bias due to time-zero missalignment, or other sources of bias
@@ -274,7 +280,7 @@ In 1999, members of Ommoord who had become 55 years of age or moved into the stu
 ---
 ### Methods
 
-- "Nested trials" design
+- New user design, using nested trials
 
 --
 
@@ -316,7 +322,7 @@ In 1999, members of Ommoord who had become 55 years of age or moved into the stu
 
 --
 
-- There is still potential confounding by indication (at baseline and time-varying), differential measurement error in dementia diagnosis.
+- There is still potential confounding by indication (at baseline and time-varying) and differential measurement error in dementia diagnosis.
 
 
 ---
@@ -391,15 +397,6 @@ Parametric G-formula: Allows presence of time-varying confounding feedback
 **A** = SBP, **L** = _Fixed covariates_: age, sex, education, SBP, history of diabetes and heart disease. _Time-varying covariates_: visit process, smoking status, SBP, BMI, HT medication, total cholesterol and diagnosis of diabetes, heart disease, Parkinson disease, Parkinsonism, TIA, dementia or cancer, **Y** = Stroke / Dementia]
 
 ---
-### Results: Stroke
-
-.center[
-
-![](figs/stroke_forest.png)
-
-]
-
----
 ### Methods
 
 1. Model each variable (A, L, Y, D) using the covariate history.
@@ -414,7 +411,7 @@ Parametric G-formula: Allows presence of time-varying confounding feedback
 
 --
 
-4. Estimate the predicted probability of the outcome based on the updated intervention
+4. Estimate the predicted probability of the outcome based on the updated intervention.
 
 --
 
@@ -430,6 +427,15 @@ Parametric G-formula: Allows presence of time-varying confounding feedback
 A (exposure), L (confounders), Y (outcome), D (competing event)
 <br>
 R package `gfoRmula`
+
+]
+
+---
+### Results: Stroke
+
+.center[
+
+![](figs/stroke_forest.png)
 
 ]
 
@@ -460,7 +466,6 @@ R package `gfoRmula`
 
 ---
 
---
 ### Discussion
 
 - Lowering blood pressure and quitting smoking reduces the risk of stroke, as described previously in literature.
@@ -477,18 +482,53 @@ Estimates rely on important assumptions:
 
   + No modeling misspecification (consider data generation process)
 
+---
 
+## Related research
+
+#### Towards a clearer causal question underlying the association between cancer and dementia
+_Under review for Epidemiology_
+
+--
+
+#### Considering questions before methods in dementia research with competing events 
+_American Journal of Epidemiology. In press._
+
+--
+
+#### Racial and ethnic differences in the risk of dementia under hypothetical blood‐pressure‐lowering interventions: The Multi-Ethnic Study of Atherosclerosis
+_Work in progress_
 
 ---
 
-### Racial and ethnic differences in the risk of dementia under hypothetical blood‐pressure‐lowering interventions: The Multi-Ethnic Study of Atherosclerosis
+## Preliminary results
 
-- Can we reduce the disparities in the risk of dementia across race/ethnicity groups, by reducing the disparities in hypertension?
+<img src=./figs/race_plots.png width="500" height="450" />
 
-- Extend the work on hypothetical interventions to reduce blood pressure sustainly over time across race/ethnicity.
+---
+class:center, middle
 
-- Data sources: Multi-Ethnic Study of Atherosclerosis (MESA)
+![](figs/intervened140.png)
 
+---
+class:center, middle
+
+![](figs/intervened120.png)
+---
+
+### Current challenges
+
+<br>
+
+- Differential missclasification of dementia, QBA?
+
+--
+
+- Modelling challenges for Chinese Americans.
+
+--
+
+- Intervention is limited to a shorter length of time than the outcome.
 
 ---
 
@@ -500,21 +540,15 @@ Estimates rely on important assumptions:
 
 --
 
-- We didn't specified how SBP would be lowered, this represents a weighted average of strategies, determined by the frequency of these in the studied population.
+- In the studies of lowering blood pressure we did not specified how SBP would be lowered, this represents a weighted average of strategies, determined by the frequency of these in the studied population.
 
 --
 
 - The target trial framework helps us in being more transparent about our questions, assumptions and interpretations.
 
----
+--
 
-## Related research
-
-#### Towards a clearer causal question underlying the association between cancer and dementia
-_Under review for Epidemiology_
-
-#### Considering questions before methods in dementia research with competing events 
-_American Journal of Epidemiology. In press._
+- This POV can help us study social determinants in new ways.
 
 ---
 
@@ -525,8 +559,7 @@ _American Journal of Epidemiology. In press._
   
 --
 
-- We can use the target trial framework even if we don’t have the intervention of
-interested measured (or discovered).
+- We can use the target trial framework even if we don’t have the intervention of interested measured (or discovered).
 
 --
 
